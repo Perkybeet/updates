@@ -6,7 +6,7 @@ ECHO.
 ECHO Cerrando aplicación...
 
 :LOOP
-tasklist ynotes >nul 2>&1
+tasklist /IM ynotes.exe >nul 2>&1
 IF ERRORLEVEL 1 (
   GOTO CONTINUE
 ) ELSE (
